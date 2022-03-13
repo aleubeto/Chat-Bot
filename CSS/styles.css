@@ -1,0 +1,100 @@
+*{
+	margin:  0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	
+	background-image: url(../IMG/4.png);
+	background-size: cover;
+	position: relative;
+}
+
+header{
+	height: auto;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #00AEEF;
+	padding: 0 5%;
+	box-sizing: border-box;
+	height: 100px;
+	transition: 0.5s;
+}
+
+.logo{
+	height: 80px;
+	width: auto;
+}
+
+.main-menuh{
+	display:  flex;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+.menu-itemh{
+	margin:  0 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: : 0.5s;
+	color:  #000000;
+}
+
+.flecha{
+	height: 50px;
+	width: auto;
+}
+
+.titulo{
+
+}
+
+.conversacion{
+
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: auto;
+	width: 100%;
+	padding: 2rem 8%;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	background-color: #F2F2F2;
+}
+
+.chat-bot{
+	height: 80px;
+	width: auto;
+	margin-bottom: 1rem;
+}
+
+.main-menuf{
+	display:  flex;
+	align-items: center;
+	list-style: none;
+}
+
+.menu-itemh{
+	margin:  0 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: : 0.5s;
+	color: #000000;
+}
+
+
+.mensaje{
+
+}
+

@@ -16,6 +16,9 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
+// Max-Min
+var maxmin = document.getElementsByClassName("fa fa-expand");
+
 function getTime() {
     let today = new Date();
     hours = today.getHours();
@@ -57,7 +60,7 @@ function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == ""){
-        userText = "I Love Taylor Swift!!"
+        return 0;
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -79,7 +82,7 @@ function buttonSendText(sampleText){
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-function sendButton(){
+function maximizeButton(){
     getResponse();
 }
 

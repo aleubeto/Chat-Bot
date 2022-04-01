@@ -4,6 +4,7 @@
     margin:  0;
 	padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -11,7 +12,6 @@ html {
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +98,7 @@ body{
     width: 25%;
     float: right;
     font-size: 20px;
+    padding: 10px 10px 10px 0px;
 }
 
 #chat-icon:hover {
@@ -117,16 +118,17 @@ body{
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     color: #000;
     background-color: #efefef;
     outline: none;
+    margin-left: 10px;
 }
 
 .userText {
     color: #efefef;
     font-family: Helvetica;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     text-align: right;
     clear: both;
@@ -141,6 +143,8 @@ body{
     border-bottom-right-radius: 2px;
     max-width: 80%;
     margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     animation: floatup .5s forwards;
 }
 
@@ -148,7 +152,7 @@ body{
     color: #000;
     font-family: Helvetica;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
 }
 
@@ -161,6 +165,8 @@ body{
     border-bottom-left-radius: 2px;
     max-width: 80%;
     margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     animation: floatup .5s forwards;
 }
 

@@ -21,6 +21,10 @@ body{
     background-color: #222;
 }
 
+h5{
+    margin-bottom: 20px;
+}
+
 .chat-bar-collapsible {
     position: fixed;
     bottom: 0;
@@ -51,7 +55,7 @@ body{
 
 .full-chat-block {
     width: 350px;
-    background: #efefef;
+    background: white;
     text-align: center;
     overflow: auto;
     scrollbar-width: none;
@@ -80,15 +84,16 @@ body{
 }
 
 .chat-bar-input-block{
-    display: flex;
-    float: left;
+    display: inline-flex;
+    float: center;
     box-sizing: border-box;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
     background-color: #efefef;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
     padding: 10px 0px 10px 0px;
+    margin: 10px;
+    margin-top: 20px;
 }
 
 .chat-bar-icons {
@@ -166,7 +171,7 @@ body{
     max-width: 80%;
     margin-left: 10px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     animation: floatup .5s forwards;
 }
 

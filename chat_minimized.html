@@ -17,32 +17,29 @@
 
         <div class="content">
             <div class="full-chat-block">
-                <!-- Message Container -->
+                <!-- Contenedor de mensajes -->
                 <div class="outer-container">
                     <div class="chat-container">
-                        <!-- Messages -->
+                        <!-- Mensajes -->
                         <div id="chatbox">
                             <h5 id="chat-timestamp"></h5>
                             <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
                         </div>
 
-                        <!-- User input box -->
+                        <!-- Caja de inputs de usuario -->
                         <div class="chat-bar-input-block">
                             <div id="userInput">
                                 <input id="textInput" class="input-box" type="text" name="msg" placeholder="Escribe tu mensaje aquí">
                                 <p></p>
                             </div>
-
                             <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: rgb(218, 68, 98);" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
-                                <i id="chat-icon" style="color: #333;" class="fa fa-expand" onclick="maximizeButton()"></i>
+                                <a id="chat-icon" style="color: rgb(218, 68, 98);" class="fa fa-fw fa-heart" onclick="heartButton()"></a>
+                                <a id="chat-icon" style="color: #333; text-decoration: none;" class="fa fa-expand"  href='index.html' target="_blank"></a>
                             </div>
                         </div>
-
                         <div id="chat-bar-bottom">
                             <p></p>
                         </div>
-
                     </div>
                 </div>
             </div>

@@ -16,9 +16,6 @@ for (let i = 0; i < coll.length; i++) {
     });
 }
 
-// Max-Min
-var maxmin = document.getElementsByClassName("fa fa-expand");
-
 function getTime() {
     let today = new Date();
     hours = today.getHours();

@@ -1,39 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Naatik: Iktan</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="CSS/styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
 
-    <body>
-        <!--Inicio del header-->
-        <header id="Header">
-            <ul class="main-menuh">
-                <li><img src="IMG/Naatik_logo.svg" alt="" class="logo"></li>
-                <li class="menu-itemh"><h1 class="titulo">Iktan</h1></li>
-            </ul>
-                <ul class= "main-menuh">
-                    <li class= "menu desplegable"><img src="IMG/maximizar.png" alt="" class="flecha"></li>
-                    <li class= "menu-itemh">Inicio</li>
-                    <li class= "menu-itemh">Contacto</li>
-                </ul>
-        </header>
-        <!--Fin del header-->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <div class="conversacion"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+</head>
+<body>
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" style="color: #efefef;" type="button" class="title">Asistente virtual: Ikta'an</button>
 
-        <!--Inicio del footer-->
-        <footer>
-            <ul class="main-menuf">
-                <li class="menu-itemf"><img src="IMG/eva.jpeg" alt="" class= "chat-bot"></li>
-                <li class="menu-itemf"><p class="mensaje">Escriba un mensaje...</p></li>
-            </ul>
-      
-        </footer>
-        <!--Fin del footer Andy estuvo aquí--> 
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Contenedor de mensajes -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Mensajes -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
 
-    </body>
+                        <!-- Caja de inputs de usuario -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg" placeholder="Escribe tu mensaje aquí">
+                                <p></p>
+                            </div>
+                            <div class="chat-bar-icons">
+                                <a id="chat-icon" style="color: rgb(218, 68, 98);" class="fa fa-fw fa-heart" onclick="heartButton()"></a>
+                            </div>
+                        </div>
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="Java/chat.js"></script>
+<script src="Java/responses.js"></script>
 </html>

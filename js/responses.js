@@ -1,21 +1,3 @@
-// Collapsible
-var coll = document.getElementsByClassName("collapsible");
-
-for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function(){
-        this.classList.toggle("active");
-
-        var content = this.nextElementSibling;
-
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-        } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-        }
-
-    });
-}
-
 function getTime() {
     let today = new Date();
     hours = today.getHours();
@@ -79,12 +61,8 @@ function buttonSendText(sampleText){
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-function maximizeButton(){
-    getResponse();
-}
-
 function heartButton(){
-    buttonSendText("Heart clicked!")
+    buttonSendText(" ❤️ ")
 }
 
 //Press enter to send a message

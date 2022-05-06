@@ -19,7 +19,7 @@
 								<option disabled selected>Ingrese un usuario</option>
 								<?php
 									$pdo = Database::connect();
-									$query = 'SELECT * FROM pag4_usuario';
+									$query = 'SELECT * FROM Dashboard';
 									foreach($pdo->query($query) as $row){
 										if ($row['idUsuario']==$idDestinatario)
 											echo "<option selected value'" . $row['idUsuario'] . "'>" . $row['usuario'] . "</option>";
